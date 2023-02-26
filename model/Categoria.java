@@ -25,8 +25,8 @@ public class Categoria {
 	@Size(min = 10, max = 100, message ="O atributo Tipo de Categoria deve conter no mínimo 100 e no máximo 100 caracteres")
 	private String categoriaProduto;
 	
-	@NotBlank(message = "O atributo Generico ou Original é Obrigátorio!")
-	@Size(min = 10, max = 100, message ="O atributo Generico ou Original deve conter no mínimo 100 e no máximo 100 caracteres")
+	@NotBlank(message = "O atributo Génerico ou Original é Obrigátorio!")
+	@Size(min = 10, max = 100, message ="O atributo Genérico ou Original deve conter no mínimo 10 e no máximo 100 caracteres")
 	private String genericoOriginal;
 	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
